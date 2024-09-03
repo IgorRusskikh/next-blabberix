@@ -1,0 +1,35 @@
+.plug {
+  @apply w-full min-h-[100vh] bg-background px-[33.75px] md:px-[72px] xl:px-[120px] 3xl:px-[150px] pb-[8.44px] md:pb-[18px] xl:pb-[30px] 3xl:pb-[40px] pt-[16.88px] md:pt-[36px] xl:pt-[60px] 3xl:pt-[100px] flex flex-col justify-center items-center
+}
+
+.presaleDate {
+  font-family: "OpenSans";
+  @apply text-[17.25px] md:text-[27.2px] xl:text-[18.67px] 3xl:text-[28px] leading-[20.15px] md:leading-[34.25px] xl:leading-[25.42px] 3xl:leading-[38.13px] text-center max-w-[320px] md:max-w-[640px] xl:max-w-[453.33px] 3xl:max-w-[680px]
+}
+
+.plugContent {
+  @apply mt-[30px] 3xl:mt-0
+}
+
+.circle {
+  @apply size-[162px] md:size-[345.6px] xl:size-[576px] 3xl:size-[864px] bg-light-purple rounded-full mt-[27.56px] md:mt-[58.8px] xl:mt-[98px] 3xl:mt-[147px] relative
+}
+
+.header {
+  font-family: "Obrazec";
+  @apply text-[110.26px] md:text-[235.22px] xl:text-[392.03px] 3xl:text-[588.04px] leading-[126.84px] md:leading-[270.59px] xl:leading-[450.99px] 3xl:leading-[676.48px] absolute -top-[15%] -left-[45%] uppercase
+}
+
+.xChar {
+  @apply text-primary
+}
+
+.header::after {
+  content: "Social network, AI, blockchain, crypto – everything you need all in one";
+  font-family: "OpenSans";
+  @apply text-[4.5px] md:text-[9.6px] xl:text-base 3xl:text-2xl leading-[6.13px] md:leading-[13.07px] xl:leading-[21.79px] 3xl:leading-[32.68px] absolute bottom-[-6px] md:bottom-[-12.80px] xl:bottom-[-21.33px] 3xl:bottom-[-32px] left-0 max-w-[80.06px] md:max-w-[170.80px] xl:max-w-[284.67px] 3xl:max-w-[420px] z-20
+}
+
+.imgCont {
+  @apply relative w-[162px] md:w-[345.6px] xl:w-[576px] 3xl:w-[864px] h-[187.5px] md:h-[400px] xl:h-[666.67px] 3xl:h-[1000px] top-[-25.31px] md:top-[-54px] xl:top-[-90px] 3xl:top-[-135px] z-10
+}

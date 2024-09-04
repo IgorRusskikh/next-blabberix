@@ -11,10 +11,10 @@ app.prepare().then(() => {
   createServer((req, res) => {
     const parsedUrl = parse(req.url, true);
     handle(req, res, parsedUrl);
-  }).listen(port);
+  }).listen(port, '0.0.0.0'); // Добавляем '0.0.0.0' здесь
 
   console.log(
-    `> Server listening at http://localhost:${port} as ${
+    `> Server listening at http://0.0.0.0:${port} as ${
       dev ? "development" : process.env.NODE_ENV
     }`
   );

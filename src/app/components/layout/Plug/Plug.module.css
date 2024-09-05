@@ -32,7 +32,7 @@
 }
 
 .header {
-  @apply text-[119.79px] md:text-[257px] lg:text-[349.92px] xl:text-[435.59px] 3xl:text-[588.04px] leading-[137.8px] md:leading-[295.65px] lg:leading-[402.55px] xl:leading-[501.1px] 3xl:leading-[676.48px] absolute top-[-30%] md:top-[15%] lg:-top-[5%] xl:-top-[15%] md:left-[-11.5%] lg:-left-[36.5%] xl:-left-[48%] 3xl:-left-[45%] uppercase font-[Obrazec];
+  @apply text-[119.79px] md:text-[257px] lg:text-[349.92px] xl:text-[435.59px] 3xl:text-[588.04px] leading-[137.8px] md:leading-[295.65px] lg:leading-[402.55px] xl:leading-[501.1px] 3xl:leading-[676.48px] absolute top-[-30%] md:top-[15%] lg:-top-[5%] xl:-top-[15%] left-0 md:left-[-11.5%] lg:-left-[36.5%] xl:-left-[48%] 3xl:-left-[45%] uppercase font-[Obrazec];
 }
 
 .xChar {

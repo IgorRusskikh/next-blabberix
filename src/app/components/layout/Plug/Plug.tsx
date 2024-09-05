@@ -1,19 +1,19 @@
-// "use client";
+"use client";
 
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import Image from "next/image";
 import Container from "../../ui/Container";
 import styles from "./Plug.module.css";
 
 export default function Plug() {
-  // const [isIphone, setIsIphone] = useState(false);
+  const [isIphone, setIsIphone] = useState(false);
 
-  // useEffect(() => {
-  //   if (/iPhone/.test(navigator.userAgent)) {
-  //     setIsIphone(true);
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (/iPhone/.test(navigator.userAgent)) {
+      setIsIphone(true);
+    }
+  }, []);
 
   return (
     <header id={`${styles.header}`}>
@@ -26,7 +26,7 @@ export default function Plug() {
         {/* HEADER WITH NAVBAR */}
         <div className={styles.plugContent}>
           <div className={styles.circle}>
-            <h1 className={[styles.header].join(" ")}>
+            <h1 className={`${styles.header} ${isIphone ? "left-[-15%]" : ""}`}>
               Blabberi<span className={styles.xChar}>x</span>
               <div className={`${styles.description}`}>
                 <p className={`hidden md:block ${styles.text}`}>

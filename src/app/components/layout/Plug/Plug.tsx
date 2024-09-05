@@ -1,8 +1,22 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 import Container from "../../ui/Container";
 import Image from "next/image";
 import styles from "./Plug.module.css";
 
 export default function Plug() {
+  const [isIphone, setIsIphone] = useState(false);
+
+  useEffect(() => {
+    if (/iPhone/.test(navigator.userAgent)) {
+      setIsIphone(true);
+    }
+  }, []);
+
+  console.log(isIphone);
+
   return (
     <header id={`${styles.header}`}>
       <p className={`${styles.presaleDate}`}>

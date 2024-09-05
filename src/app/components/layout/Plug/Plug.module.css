@@ -44,6 +44,7 @@
 }
 
 .text {
+  font-family: "OpenSans";
   @apply text-[14px] md:text-[13px] lg:text-[16px] xl:text-[20px] 3xl:text-2xl leading-[19.07px] md:leading-[18.79px] lg:leading-[21.79px] xl:leading-[27.24px] 3xl:leading-[32.68px] max-w-[246px] md:max-w-[278px] lg:max-w-[278px] xl:max-w-[354px] 3xl:max-w-[420px] text-center md:text-left
 }
 

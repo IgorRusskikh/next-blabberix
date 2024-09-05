@@ -1,20 +1,8 @@
-"use client";
-
-import { useEffect, useState } from "react";
-
-import Image from "next/image";
 import Container from "../../ui/Container";
+import Image from "next/image";
 import styles from "./Plug.module.css";
 
 export default function Plug() {
-  const [isIphone, setIsIphone] = useState(false);
-
-  useEffect(() => {
-    if (/iPhone/.test(navigator.userAgent)) {
-      setIsIphone(true);
-    }
-  }, []);
-
   return (
     <header id={`${styles.header}`}>
       <p className={`${styles.presaleDate}`}>
@@ -22,11 +10,15 @@ export default function Plug() {
         updates.
       </p>
 
-      <Container className="py-[90px] md:py-[130px] lg:py-[120px] xl:py-[128px] 3xl:!py-[40px] pb-[30px] md:pb-[60px] lg:pb-[30px] xl:pb-[30px] 3xl:!pb-[30px]">
+      <Container className="py-[90px] md:py-[130px] lg:py-[120px] xl:py-[128px] 3xl:!py-[40px] pb-[30px] md:pb-[60px] lg:pb-[30px] xl:pb-[30px] 3xl:!pb-[30px] pt-0">
         {/* HEADER WITH NAVBAR */}
         <div className={styles.plugContent}>
+          <h1 className={`${styles.header} md:hidden !top-0 !relative`}>
+            Blabberi<span className={styles.xChar}>x</span>
+          </h1>
+
           <div className={styles.circle}>
-            <h1 className={`${styles.header} ${isIphone ? "left-[-15%]" : ""}`}>
+            <h1 className={`${styles.header} hidden md:block`}>
               Blabberi<span className={styles.xChar}>x</span>
               <div className={`${styles.description}`}>
                 <p className={`hidden md:block ${styles.text}`}>

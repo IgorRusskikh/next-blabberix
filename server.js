@@ -15,7 +15,7 @@ app.prepare().then(() => {
 
   console.log(
     `> Server listening at http://0.0.0.0:${port} as ${
-      dev ? "development" : process.env.NODE_ENV
+      dev ? "development" : 3000
     }`
   );
 });
